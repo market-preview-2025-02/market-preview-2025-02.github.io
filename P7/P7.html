@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 3px
+        }
+        .container {
+            background-image: url("背景组.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+            width: 462px;
+            margin: auto;
+            overflow: hidden;
+            height: 100%;
+        }
+        img {
+            scale: 0.72;
+        }
+        #f {
+            position: absolute;
+            top: 220px;
+            left: 40px;
+            background-image: url("点亮前.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 386px;
+            height: 570px;
+        }
+        #f:hover {
+            background-image: url("点亮后.png");
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="北京冬奥会.png" style="position: absolute; left: -43px; top: 4px; z-index: 5" />
+    <img src="大标题.png" style="position: absolute; left: -33px; top: 60px; z-index: 4;"/>
+    <span style="position: absolute; top: 180px; left: 50px; font-size: 24px; color: rgba(255, 255, 255, 0.8); font-weight: normal;">#点击屏幕帮运动健儿点亮火炬</span>
+    <div id="f"></div>
+    <img src="返回上页.png" style="position: absolute; top: 802px; left: 15px;">
+    <img src="梦想留言板.png" style="position: absolute; top: 802px; left: 220px;">
+</div>
+</body>
+</html>
